@@ -8,7 +8,7 @@ body, ul, p {
     display: grid;
     text-align: center;
     grid-template-columns: minmax(auto,900px);
-    grid-template-rows: minmax(auto, 500px);
+    grid-template-rows: minmax(auto, 700px);
     justify-content: center;
     background-color: aqua;
   }
