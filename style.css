@@ -1,0 +1,46 @@
+
+body, ul, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    display: grid;
+    text-align: center;
+    grid-template-columns: minmax(auto,900px);
+    grid-template-rows: minmax(auto, 500px);
+    justify-content: center;
+    background-color: aqua;
+  }
+  
+  .myGrid {
+    background-color: coral;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 500px;
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .myGrid div {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .myGrid div:nth-child(even){
+    justify-self: end;
+    grid-column: 1;
+  }
+  
+  .myGrid div:nth-child(odd){
+    justify-self: start;
+    grid-column: 2;
+  }
+  
